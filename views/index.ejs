@@ -1,0 +1,33 @@
+<%- include('header.ejs') %>
+<%- include('nav.ejs') %>
+
+    <div class="container main">
+      <% if(data.length>0){ %>
+      <div class="cards">
+        <% data.forEach(element => { %>
+        <div class="conatiner container1">
+          <div class="heading"><%= element.title %></div>
+          <div class="posts"><%= element.description %></div>
+          <div class="end">
+            <div class="author">Article by: <%= element.author %></div>
+            <div class="time"> Published on: <%= element.time %></div>
+          </div>
+          <div class="buttons">
+            <form action="/editPost/<%= element.id %>" method="get">
+                <input type="hidden" name="id" value="<%= element.id %>">
+                <button class="submit" type="submit">Edit</button>
+            </form>
+            <form action="/deletePost/<%= element.id %>" method="get">
+                <input type="hidden" name="id" value="<%= element.id %>">
+                <button class="delete" type="submit">Delete</button>
+            </form>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+      <% } %>
+    </div>
+
+
+
+<%- include('footer.ejs') %>

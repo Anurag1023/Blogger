@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.main{
+    margin-bottom: 30px;
+}
+
+.cards{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.container1{
+    border: 2px solid gray;
+    border-radius: 9px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.heading{
+    font-size: 30px;
+    font-weight: 800;
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+}
+
+.posts{
+    font-size: 20px;
+    text-wrap: wrap;
+    font-family: "Poppins", sans-serif;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.submit{
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete{
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
