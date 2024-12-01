@@ -50,7 +50,7 @@ app.post("/api/newPost", (req, res) => {
     author: data1.author,
     time: date,
   };
-  data.push(post);
+  data.unshift(post);
   res.sendStatus(200);
 });
 
